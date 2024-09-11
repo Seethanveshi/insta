@@ -1,0 +1,261 @@
+
+.middle-menu{
+    width:510px;
+    min-width:200px;
+}
+
+.header{
+    /* background-color: blue; */
+    display:flex;
+    flex:1;
+    min-width:200px;
+    flex-direction:row;
+    padding-top:12px;
+    padding-bottom:12px;
+    justify-content: space-between;
+    align-items: center;
+    height:74px;
+}
+
+.Stories{
+    color:black;
+    width: 50px;
+    height:74px;
+    /* background-color:blue; */
+    justify-content: center;
+    flex-direction:column;
+    overflow: hidden;
+}
+
+.img{
+    height: 75px;
+    width:50px;
+    /* background-color:red; */
+}
+
+.img .profile-pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height:46px;
+    width:46px;
+    border-radius:50%;
+    position:relative;
+    margin-left:2px;
+    margin-top:2px;
+}
+
+.img .profile-pic:before{
+    content:'';
+    position:absolute;
+    top:-1.5px;
+    bottom:-1.5px;
+    left:-1.5px;
+    right:-2px;
+    background: linear-gradient(to right , rgb(241, 241, 47) , rgb(255, 94, 0) , red , rgb(158, 75, 158));
+    border-radius:50%;
+    z-index:-1;
+}
+
+
+.image{
+    margin:0px;
+    height:43px;
+    width:43px;
+    border-radius:50%;
+    border-style:none;
+}
+
+.image:hover{
+    cursor:pointer;
+}
+
+.next{
+    height:16px;
+    width:16px;
+    position: absolute;
+    top:25px;
+    right:20px;
+    border-radius:10px;
+}
+
+.name{
+    font-size:10px;
+    margin:0px;
+    margin-top:5px;
+    margin-bottom:5px;
+    padding:0px;
+    /* background-color: blue; */
+    color:white;
+    overflow: hidden;
+    text-align: center;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    display: block;
+}
+
+.name:hover{
+    cursor:pointer;
+}
+
+.middle-menu .middle-section{
+    display:flex;
+    flex-direction: column;
+    position:relative;
+    /* background-color:green; */
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-section .posts{
+    border-style:solid;
+    border-width:0px;
+    border-bottom-width:1px;
+    border-color:rgb(44, 44, 44);
+    padding-bottom:15px;
+    margin-bottom:20px;
+    width:370px;
+}
+
+
+.middle-section .posts p{
+    color:white;
+    font-weight: bold;
+    font-size:12px;
+    margin:0px;
+    padding-left:8px;
+    display:inline-block;
+    /* background-color: red;; */
+}
+
+.middle-section .posts p:hover{
+    cursor:pointer;
+}
+
+.posts button .toolkit{
+    color:rgba(255, 255, 255, 0.692);
+    position:absolute;
+    border-style: solid;
+    border-width:1px;
+    font-size:10px;
+    white-space:nowrap;
+    bottom:-18px;
+    right:-75px;
+    padding:5px;
+    background-color:rgba(231, 222, 222, 0.082);
+    opacity: 0;
+    pointer-events:none;
+    transition: opacity 0.2s;
+}
+
+.posts button:hover .toolkit{
+    opacity:1;
+}
+
+.posts button:hover .tt{
+    opacity:1;
+}
+
+.posts button .more-options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:300px;
+    height:350px;
+    position:absolute;
+    /* position: relative; */
+    background-color: blue;
+}
+
+
+.id{
+    display:flex;
+    align-items: center;
+    position:relative;
+}
+
+.tool{
+    position:absolute;
+    background-color:black;
+    width:280px;
+    height:280px;
+    top:20px;
+    left:40px;
+    box-shadow: 0px 0px 25px rgb(255, 255, 255 , 0.3);
+    pointer-events:none;
+    transition:opacity 0.2s;
+    opacity:0;
+}
+
+.id:hover .tool{
+    opacity:1;
+}
+
+.posts .post-head .tool .account{
+    display:flex;
+    align-items: center;
+    margin-left:10px;
+    /* background-color:blue; */
+    height:70px;
+
+}
+
+.posts .post-head .tool .account img{
+    width:50px;
+    height:50px;
+}
+
+.posts .post-head .tool .account p{
+    display:block;
+}
+
+.posts .post-head .tool .account-details{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    align-items: center;
+    /* background-color:green; */
+    height:60px;
+}
+
+
+.posts .post-head .tool .images{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;;
+    background-color:black;
+    height:100px;
+}
+
+.posts .post-head .tool .connection{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    /* background-color: green; */
+    height:50px;
+}
+
+.middle-section .posts img{
+    display:inline-block;
+    height:28px;
+    width:28px;
+    border-radius:50%;
+}
+
+.middle-section .posts .profic-pic:hover{
+    position:relative;
+    cursor:pointer;
+}
+
+.middle-section .posts .icons-section img{
+    padding-right:5px;
+    width:25px;
+    height:23px;
+
+}
+
+.middle-section .posts .icons-section img{
+    cursor:pointer;
+}
