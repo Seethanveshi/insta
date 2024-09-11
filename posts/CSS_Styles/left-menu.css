@@ -1,0 +1,147 @@
+.left-menu{
+    display:flex;
+    position:fixed;
+    color:white;
+    top:0;
+    height:100%;
+    left:0;
+    /* background-color:red; */
+    width:195px;
+    flex-direction: column;
+    border-style:solid;
+    border-width:0px;
+    border-right-width:1px;
+    border-color:rgb(44, 44, 44);
+}
+
+.top-section{
+    /* background-color: blue;; */
+    top:0;
+    padding-top:5px;
+    padding-bottom:0px;
+    margin-bottom:15px;
+    margin-left:10px;
+}
+
+.top-section p{
+    font-size:20px;
+    font-family : Georgia;
+    margin-left:12px;
+}
+
+.left-menu .middle-section{
+    display:flex;
+    flex:1;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color:green; */
+    margin-left:10px;
+    margin-right:10px;
+}
+.side-links{
+    display:flex;
+    height:40px;
+    align-items: center;
+    padding-left:8px;
+    /* background-color:blue; */
+    border-radius:8px;
+    transition: background-color 0.3s;
+}
+
+.side-links:hover{
+    background-color: rgba(255, 255, 255, 0.103);
+    cursor:pointer;
+}
+
+.bottom-section{
+    margin-top:20px;
+    margin-bottom:18px;
+    margin-left:10px;
+    margin-right:10px;
+
+}
+
+.side-links .Home-icon{
+    width:23px;
+    height:22px;
+}
+
+.side-links .Search-icon{
+    width:22px;
+    height:22px;
+}
+.side-links .Explore-icon{
+    width:20px;
+    height:20px;
+    border-radius:11px;
+}
+.side-links .Reel-icon{
+    width:22px;
+    height:22px;
+}
+.side-links .Send-icon{
+    width:22px;
+    height:22px;
+}
+.side-links .Love-icon{
+    width:20px;
+    height:18px;
+}
+.side-links .Create-icon{
+    width:20px;
+    height:20px;
+    border-radius:10px;
+}
+.side-links .Profile-icon{
+    width:22px;
+    height:22px;
+    border-radius:11px;
+}
+button .menu-icon{
+    width:22px;
+    height:22px;
+}
+
+.bottom-section button{
+    display:flex;
+    position:relative;
+    height:40px;
+    align-items: center;
+    padding-left:8px;
+    /* background-color:blue; */
+    border-radius:8px;
+    width:170px; 
+    background-color:black; 
+    border-style:none; 
+    color:white;
+    transition: background-color 0.3s;
+}
+
+.bottom-section button:hover{
+    background-color: rgba(255, 255, 255, 0.103);
+    cursor:pointer;
+}
+
+
+.bottom-section button .more{
+    position:absolute;
+    width:220px;
+    height:380px;
+    left:0px;
+    bottom:40px;
+    background-color: red;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.bottom-section button:active .more{
+    opacity: 1;
+}
+
+
+.side-links p{
+    margin-left:11px;
+    font-size:13px;
+    font-family : -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+}
